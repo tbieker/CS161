@@ -1,0 +1,3 @@
+CS 161 - Lab 1
+
+The goal of the first lab is to successfully compile and run the "hello world" program described in class on your home machine. Once you get your compiler working and you've run a program, please take a screenshot of the program while it's running. Turn this in to the dropbox. Questions are always welcome and you can even help other students with their installations if you wish :)
