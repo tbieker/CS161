@@ -18,7 +18,7 @@ int main()
 	cout << "Welcome to " << name1 << "'s Crystal Ball!" << endl;
 	cout << "What is your name, please? ";
 	cin >> name2;
-	cout << "Hello, " << name2 << ". My name is " << name1 << endl;
+	cout << "Hello, " << name2 << ". My name is " << name1 << "." << endl;
 	cout << "What subject are you studying? ";
 	cin >> subject;
 	cout << "Well, " << name2 << ", " << name1 << "'s crystal ball says you will do very well in " << subject << " this term." << endl;
