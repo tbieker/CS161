@@ -1,13 +1,20 @@
 //Assignment 1
+//Author: Tyler Bieker
+//Date: 09/25/2015
+//Sources: None
 
 #include <iostream>
+#include <string>
+
+using namespace std;
 
 int main()
 {
-	char name1 = "";
-	char name2 = "";
-	char subject = "";
+	char name1;
+	char name2;
+	char subject;
 	
+	name2 = "Tyler";
 	cout << "Welcome to " << name2 << "'s Crystal Ball!" << endl;
 	cout << "What is your name, please? ";
 	cin >> name2 >> endl;
