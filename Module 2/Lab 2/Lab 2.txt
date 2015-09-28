@@ -1,0 +1,28 @@
+Lab 2
+
+Please submit four .cpp files!
+
+ 
+
+Program 1:
+
+Write a program that prompts a user to enter five test scores and then prints the average test score.
+
+ 
+
+Program 2:
+
+Write a program that prompts a user to enter a number of seconds. The program then prints the amount of time in hours, minutes, and seconds (for example 9630 seconds has the output 2:40:30).
+
+ 
+
+Program 3:
+
+If you buy a 40GB hard drive, then chances are that the actual storage on the hard drive is not 40GB. This is due to the fact that, typically, a manufacturer uses 1000 bytes as the value of 1KB, 1000Kb as the value of 1MB, and 1000MB as the value of 1GB. Therefore, a 40GB hard drive contains 40,000,000,000 bytes. However, in computer memory, as given in Table 1-1 (Chapter 1), 1KB is equal to 1024 bytes, and so on. So the actual storage on a 40GB hard drive is approximately 37.25GB! Write a program that prompts the user to enter the size of the hard drive specified by the manufacturer, on the hard drive box, and outputs the actual storage capacity of the hard drive.
+
+ 
+
+Program 4:
+
+A permutation of three objects, a, b, and c, is any arrangement of these objects in a row. For example, some of the permutations of these objects are abc, bca, and cab. There are six total permutations of three objects. Suppose that these objects are strings. Write a program that prompts the user to enter three strings. The program then outputs all six permutations of these strings. Please output one permutation per line and print spaces between the objects (strings) on each line.
+
