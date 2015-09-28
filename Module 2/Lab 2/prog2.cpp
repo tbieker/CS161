@@ -9,7 +9,7 @@ using namespace std;
 
 int main(){
 	
-	int numSec; //Number of seconds to input_iterator
+	int numSec; //Number of seconds to input
 	int initMinutes;
         int seconds, minutes, hours;
 	char reply;
