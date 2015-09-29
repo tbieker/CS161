@@ -22,7 +22,7 @@ int main(){
     int sumCol1, sumCol2, sumCol3, sumCol4;
     int sumDiagTop, sumDiagBot;  //Diagonals starting from top left(sumDiagTop) and bottom left(sumDiagBot)
     
-    bool isMagicSquare; //Does square work true/false
+    bool isMagicSquare = false; //Does square work true/false. Initial is false
     char reply;
     
     cout << "Welcome to " << owner <<"'s Magic Square Checker! Please enter your magic square: " << endl;
@@ -44,15 +44,16 @@ int main(){
     
     sumDiagTop = a1 + b2 + c3 + d4;  //Determine sum of diagonals
     sumDiagBot = d1 + c2 + b3 + a4;
-    if (sumLineA == sumLineB && sumLineB == sumLineC && sumLineC == sumLineD) //Determine if the square meets requirements
+    
+	if (sumLineA == sumLineB && sumLineB == sumLineC && sumLineC == sumLineD) //Determine if the square meets requirements
         if (sumCol1 == sumCol2 && sumCol2 == sumCol3 && sumCol3 == sumCol4)
            if (sumDiagTop == sumDiagBot)
               isMagicSquare = true;  //Square has meet all requirements and therefore is true
               
     if(isMagicSquare == true)
-	cout << "\nThis was a magic square! Thank you!" << endl;
+		cout << "\nThis was a magic square! Thank you!" << endl;
     else
-	cout << "\nThis was not a magic square! Thank you!" << endl;
+		cout << "\nThis was not a magic square! Thank you!" << endl;
 	
     cout << "\n \n \n \n" << "Press enter to quit: "; //Keep program from flashing
     cin >> reply;
