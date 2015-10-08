@@ -1,0 +1,17 @@
+CS 161 
+
+Lab 4
+
+
+1. Write a program that computes the number PI. There are many ways to calculate PI but here is a simple one:
+
+PI = 4 * (1 - 1/3 + 1/5 - 1/7 + 1/9 - 1/11 + ... ) 
+
+where the denominators continue as odd numbers and the signs to add or subtract alternate. This formula is called a series and each new number that you add or subtract is called a term. This is an infinite series because you can keep adding and subtracting more terms forever - as more terms are added and subtracted the total gets closer and closer to PI. Using a while loop, compute the total of this formula for the first 100 terms and ouutputs the result. For consistency, please use the DOUBLE type for your variables. If you're interested in checking your work, see how well your answer compares to the true value of PI, which can be found on Wikipedia.
+
+
+2. Write a program that outputs Fibonacci numbers. The Fibonacci numbers are as follows:
+
+1 1 2 3 5 8 13 21 34 55 89 144 ...
+
+with the rule that each number is the sum of the two previous numbers (eg. 2 + 3 = 5, 3 + 5 = 8, etc.). Using a while loop and three integer variables, have your program output a new Fibonacci number to the screen each time the user enters a key (use getchar()!). 
