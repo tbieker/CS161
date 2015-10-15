@@ -11,7 +11,7 @@ using namespace std;
 
 int main(){
 	
-	const string owner = "Tyler";										//Fare calculator owner
+	const string OWNER = "Tyler";										//Fare calculator owner
 	char reply;	
 	
 	int numAdults, numChildren, vehicleLength;	
@@ -30,7 +30,7 @@ int main(){
 	
 	cout << fixed << showpoint << setprecision(2);						// Display two decimals in the totals
 	
-	cout << "Welcome to " << owner << "'s Fare Calculator" << endl;
+	cout << "Welcome to " << OWNER << "'s Fare Calculator" << endl;
 	
 	cout << "How many adults (age 12 or over) are in your party? ";
 	cin >> numAdults;
@@ -128,7 +128,7 @@ int main(){
 //Table format end	
 
 	
-	cout << "\nThank you for using " << owner << "'s Fare Calculator" << endl;
+	cout << "\nThank you for using " << OWNER << "'s Fare Calculator" << endl;
 	
 	cout << "\nPress enter to quit: ";
 	cin >> reply;
