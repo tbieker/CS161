@@ -1,0 +1,25 @@
+Lab 5
+
+CS 161
+
+For this lab, you will use a list of English words to find out interesting things about our language.
+Please hard code the path of the file into your program and do not ask the user to input it - 
+if you put it in the C drive, it would make my life easier. Mac/Linux people, don't worry about that.
+Also, if you could put all of your responses into one file (clearly commented!), that would be easier
+for both of us. This week, please do all three questions!
+
+1. Find the largest word on the list, print it, and print it's length (the str.length() function will help here!).
+
+2. Find all of the words with one letter and print them.
+
+3. Find the number of words of every possible length and print how many there are in a table.
+   The table should start off looking like this:
+
+	Length	Number of Words
+	1	2
+	2	140
+	.	.
+	.	.
+	.	.
+
+   What is the commonest length of English word?
