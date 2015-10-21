@@ -1,7 +1,7 @@
 //Author: Tyler Bieker
 //Lab 5
 //Date: 10/20/2015
-//Sources: http://www.cplusplus.com/reference/istream/istream/seekg/ 
+//Sources: http://www.cplusplus.com/reference/istream/istream/seekg/ for use of seekg function
 
 #include <iostream>
 #include <fstream>
@@ -11,7 +11,7 @@
 using namespace std;
 
 int main(){
-	//const string FILEPATH = "/home/tbieker/Documents/Programming/CS161/Module 5/Lab/EnglishWords.txt"; //Enter filepath of text file
+	const string FILEPATH = "./EnglishWords.txt"; //Enter filepath of text file
 	
 	ifstream wordsText;
 	string longestWord = ""; //store the longest word while looking through file 
@@ -19,10 +19,8 @@ int main(){
 	int wordLength;
 	int counter = 0;
 	
-		
-	//wordsText.open(FILEPATH.c_str);
-	wordsText.open("/home/tbieker/Documents/Programming/CS161/Module 5/Lab 5/EnglishWords.txt");
 	
+	wordsText.open(FILEPATH.c_str());
 	
 	if(!wordsText){
 		cout << "File not found";
