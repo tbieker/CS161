@@ -29,7 +29,7 @@ int main(){
 	
 	resultsFile.open(filePath.c_str());						//Open results.txt file
 	
-	if(!resultsFile){
+	if(!resultsFile){		//error message if file not located
 		cout << "That is not a valid file";
 		return 1;
 	}
@@ -45,7 +45,7 @@ int main(){
 		cout << left;
 		cout << setw(10) << name << " " << hasSeen << " " << age << " " << score << ch;	//echo the input data
 		
-		if(hasSeen == 'Y' || hasSeen == 'y'){
+		if(hasSeen == 'Y' || hasSeen == 'y'){		//determine which counter to use 
 			switch(age >= 18){
 				case true: 
 					sumOverSeenScore = sumOverSeenScore + score;
@@ -69,8 +69,8 @@ int main(){
 			}
 		}
 		
-		sumTotalScore = sumTotalScore + score;
-		totalCounter++;
+		sumTotalScore = sumTotalScore + score;		//add scores of ALL participants
+		totalCounter++;								//counter for all participants in file
 		resultsFile >> name;
 	}
 	

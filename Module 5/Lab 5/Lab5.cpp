@@ -47,12 +47,12 @@ int main(){
 		
 	}
 
-	cout << "Longest word: " << longestWord << "  Length: " << longestWord.length() << endl;
+	cout << "Longest word: " << longestWord << "  Length: " << longestWord.length() << endl;  //output longest word and length
 	
 	cout << left;
 	cout << setw(8) << "Length" << "Number of words" << endl;
 	
-	for(int i = 1; i <= longestWord.length(); i++){				//repeat throught the word list (i) times until longest length is reached
+	for(int i = 1; i <= longestWord.length(); i++){		//repeat throught the word list (i) times until longest length is reached
 	
 		wordsText.clear();							//clear wordsText eof
 		wordsText.seekg(0, wordsText.beg);			//set pointer to beginning of file
