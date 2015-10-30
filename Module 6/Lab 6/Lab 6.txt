@@ -1,0 +1,17 @@
+CS 161 
+Lab 6
+
+Please do the following 3 problems:
+
+1. Write a function that returns the number of vowels in a word. 
+For example: vowels("fancy") would return 1.
+
+2. Using the function that returns voweld, create a function that
+returns the number of consonants in a word. 
+For example: consonants("egotist") would return 4.
+
+3. Using these two functions and the list of english words from
+last week, find the percentage of vowels and percentage consonants 
+in English. You should get a percentage of vowels = 37.4% and 
+consonants = 62.5%.
+
