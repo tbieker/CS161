@@ -1,7 +1,7 @@
 //Author: Tyler Bieker
 //Program: Lab 6 - Vowel and consonant counter
 //Date: 10/26/2015
-//Sources: 
+//Sources: None
 
 #include <iostream>
 #include <iomanip>
@@ -10,7 +10,7 @@
 
 using namespace std;
 
-const string FILEPATH = "C:\\Users\\Tyler\\Desktop\\PCC\\CS161\\Module 6\\Lab 6\\EnglishWords.txt"; //path of file containing words
+const string FILEPATH = "EnglishWords.txt"; //path of file containing words
 
 int getVowelCount(string word);
 int getConsonantCount(string word);
@@ -52,8 +52,8 @@ int main(){
 	vowelPercentage = (totalVowels / totalLetters) * 100.0;    		//divide and multiply by 100 to get percentage
 	consonantPercentage = (totalConsonants / totalLetters) * 100.0;
 	
-	cout << "Number of vowels: " << totalVowels << endl;
-	cout << "Number of consonants: " << totalConsonants << endl;
+	//cout << "Number of vowels: " << totalVowels << endl;
+	//cout << "Number of consonants: " << totalConsonants << endl;
 	cout << "Percentage of vowels: " << vowelPercentage << endl;
 	cout << "Percentage of consonants: " << consonantPercentage << endl;
 	
@@ -79,6 +79,7 @@ int getVowelCount(string word){			//function to determine number of vowels in wo
 	
 	for(int i = 0; i < wordLength; i++){	//iterate through all letters of word
 		letter = word.at(i);			//read letter at position i
+		letter = tolower(letter);		//make letter lowercase
 		
 		switch(letter){					//determine if vowel
 			case 'a':
@@ -103,6 +104,7 @@ int getConsonantCount(string word){		//function to determine number of consonant
 	
 	for(int i = 0; i < wordLength; i++){	//iterate through all letters of word
 		letter = word.at(i);	//read letter at position i
+		letter = tolower(letter);
 		
 		switch(letter){				
 			case 'a':
