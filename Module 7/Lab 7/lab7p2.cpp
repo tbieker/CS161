@@ -1,7 +1,7 @@
 //Author: Tyler Bieker
-//Assignment: Lab 7 part one
+//Assignment: Lab 7 part two
 //Date: 11/02/2015
-//Sources:
+//Sources: None
 
 #include <iostream>
 #include <cmath>
@@ -9,7 +9,6 @@
 using namespace std;
 
 int sumDigits(int n);
-int integerLength(int n);
 void continueProg(bool& answer);
 
 int main(){
