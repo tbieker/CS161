@@ -1,0 +1,19 @@
+CS 161
+
+Lab 8
+
+Please choose 2 of the following problems:
+
+
+1. Create a program that inputs up to 100 integers (space separated!) and outputs their sum. For example:
+
+1 2 3 4 5 6 7 8 9 10
+55
+
+You will need to use an integer array to store your numbers. You can test to see if you've gotten all of the input with cin.peek().
+
+
+2. Modify your assignment #2 (Magic Squares) to use an array rather than 16 separate variables. You may choose to use for loops to compute the sums of rows / cols / diags, or retain the original method of listing it all out.
+
+
+3. Modify your assignment #6 (Primes) to use the Sieve of Erasthonese method of finding primes. In your isPrime() function, instead of checking all divisors less than the square root, only check PRIME divisors less than the square root. To do this, you'll have to maintain an array of the prime numbers that you've found so far. You'll find that you can now find the 10,000,000th prime number in a short amount of time!
