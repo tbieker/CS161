@@ -1,6 +1,6 @@
 //Author: Tyler Bieker
-//Program: Assignment 6
-//Date: 10/25/2015
+//Program: Lab 8.3 Update to prime function
+//Date: 11/12/2015
 //Sources:none
 
 #include <iostream>
@@ -10,18 +10,25 @@
 using namespace std;
 
 const int PRIME_COUNT = 100; //number of prime numbers to count
-const double NTH_COUNTER = 6; //10^x to count to  ex: 10, 100, 1000...
+const double NTH_COUNTER = 7; //10^x to count to  ex: 10, 100, 1000...
 
+const int ARRAY_SIZE = 50000000;
+int primeArray[ARRAY_SIZE];
+int primeArrayCounter = 0;
+
+void initialize(int array[]);
 bool isPrime(int number);
 void output(int n, int nthPrime);
 void partOne();
 void partTwo();
 
 int main(){
+	initialize(primeArray);
+	cout << "Array initialized" << endl;
 	partOne();
 	cout << endl << endl; //make two empty lines between part one and part two
-	//partTwo();
-	
+	partTwo();
+
 	char reply;
 	cout << "\n\npress q to quit:";
 	cin >> reply;
@@ -33,11 +40,13 @@ void partOne(){ //part one of the assignment. Outputs prime numbers to 100
 	int counter = 0;
 	
 	while(counter <= PRIME_COUNT){
-		num++;
 		if(isPrime(num) == true){	//only display and increase counter if the number is prime
 			cout << num << endl;
 			counter++;				//increase prime count
+			primeArray[primeArrayCounter] = num; //add prime number to array
+			primeArrayCounter++;  //increment counter
 		}
+		num++;
 	}
 }
 
@@ -63,6 +72,27 @@ void output(int n, int nthPrime){ //output formatted results
 	cout << left << setw(12) << n << nthPrime << endl;
 }
 
+
+bool isPrime(int number){
+	
+	if(number < 2){
+		return false;
+	}
+	
+	double num = sqrt(number);		//use all numbers less than the square root to divide the number and check for prime
+
+	for(int i = 0; primeArray[i] <= num; i++){	//divide by the prime numbers under the sqrt of the test number
+		if(number % primeArray[i] == 0){
+			return false;
+		}
+	}
+	return true;	//return true if for loop does not return a false
+}
+
+
+/*
+//Original
+//******************************************************************
 bool isPrime(int number){
 	int testNumber;
 	
@@ -79,4 +109,11 @@ bool isPrime(int number){
 	}
 	
 	return true;	//return true if for loop does not return a false
+}
+*/
+
+void initialize(int array[]){
+	for(int i = 0; i < ARRAY_SIZE; i++){
+		array[i] = i + 2; //initialize array to hold prime numbers starting at prime number 2
+	}
 }
