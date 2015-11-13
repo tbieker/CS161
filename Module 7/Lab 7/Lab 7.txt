@@ -1,0 +1,37 @@
+CS 161
+
+Lab 7
+
+Please compelete 1 of the following 2 programming problems:
+
+
+
+1. Create a function that checks a string of parentheses to see if it is "balanced". A balanced string of parentheses is one in which the parentheses are arranged correctly. For example:
+
+()
+(())
+()()
+(())()(()())
+
+are all balanced strings of parentheses.
+
+)(
+((
+(()(())
+
+are not balanced strings of parentheses.
+
+
+Your function should be called isBalanced, take a string as an argument, and return a boolean value - it should have the following prototype:
+
+bool isBalanced(string paren);
+
+Please make use of the string functions mentioned in chapter 7 of your book. I think that erase(), length(), find(), empty(), and a loop should be sufficient to solve the problem. Then, make a main function that obtains user input, tests it with the function, and outputs the result.
+
+
+2. Create a function that takes an integer and returns the sum of the integer's digits. The function's prototype will be
+
+int sumDigits(int n);
+
+and, as an example, the call sumDigits(12345) should give the return value 15. Then, make a main function that obtains user input, tests it with the function, and outputs the result.
+
