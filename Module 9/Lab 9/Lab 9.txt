@@ -1,0 +1,41 @@
+CS 161
+
+Lab 9
+
+For this lab, you will make an array of structures of arrays. There is a file in the dropbox of a pretend grading spreadsheet of CS 161 students. Your program should open this file and read it into the correct data structure. Since CS 161 consists of 10 assignments, 10 quizzes, 10 labs, a midterm, and a final, your data structure should look like this:
+
+struct Student {
+   string name;
+   int asgn[10];
+   int quiz[10];
+   int lab[10];
+   int midterm;
+   int final;
+};
+
+You can assume that at this point in the quarter, there are 20 students left in the class. Thus there will be 20 entries in the file, and you will need to create an array of 20 students (called students) in main, like this:
+
+Student students[20];
+
+
+
+Once you load the data from the file into the array of structs, you should have your program echo the contents of the students array to the screen. This will be worth 50% of the lab grade.
+
+Next, you should print the answers to the following questions to the screen. This will be worth the other 50% of the lab grade:
+
+1. What is Alice's final grade? You can assume the same grade weighting from the class syllabus, assignments are worth 30%, quizzes 20%, labs, midterm, and final all 15% each, and Alice had perfect attendance, so she gets the full 5% for attendance / participation.
+
+2. What is the class average on the final quiz, quiz 10?
+
+3. Who got the lowest grade in the class? (for this question, you can assume all students got full attendance scores of 5%)
+
+
+
+I would suggest you make functions as follows:
+
+void loadData(Student students[20]);
+void printData(Student students[20]);
+int computeFinalGrade(Student stu);
+int findQuiz10Average(Student students[20]);
+
+Successful completion of homeworks 8 and 9 will help significantly with this lab, so I suggest that you finish those up if you haven't yet. Good luck!
