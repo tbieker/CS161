@@ -1,0 +1,42 @@
+CS 161
+
+
+Lab 10
+
+
+This week you will do only the one following problem: implement selection sort and test how long it takes to sort lists of various sizes. Your main function should declare a two dimensional array,
+
+static int arr[10][100000];
+
+where the 'static' keyword is necessary to allocate the array where there is enough memory to hold it. You will then implement two functions that modify this array.
+
+
+First, you will make an initializing function to put random numbers into the array as such:
+
+void init(int arr[10][100000]);
+
+
+Secondly, you will sort parts of the array and calculate how long it takes. Write a function that implements selection sort. Your function will be a little different than the book in that you will have an additional argument that limits how much of the array gets sorted. The prototype will look like this:
+
+void selectionSort(int arr[], int size);
+
+
+In main, you will call selectionSort in the context of a for loop. This for loop will sort lists of sizes that are factors of 10000 - it will loop 10 times, sorting a list of 10000, then 20000, then 30000, etc. up to 100000. You can use your two dimensional array that you declared above as the source lists for selectionSort. As you sort in your for loop, you should print how long each sort took, eventually printing 10 different times, one for each multiple of 10000. Bearing in mind that a two dimensional array is actually an array of arrays, the call to selectionSort should look like this:
+
+selectionSort(arr[i], 10000*i);
+
+
+Please print the time in milliseconds; on Windows, you can use the clock() command, on Mac/Linux, the gettimeofday() command. Please google these if you are not familiar with them. I get the following output from my program:
+
+10000	156
+20000	561
+30000	1248
+40000	2418
+50000	3572
+60000	5039
+70000	6864
+80000	9143
+90000	11607
+100000	14310
+
+and yours should look somewhat similar. Finally, consider a rhetorical question... do these times follow an N^2 relationship as we suggested that they should in class? How could we determine this? If some of these times deviate from a perfect parabolic graph, why might that be?
